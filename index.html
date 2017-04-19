@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+
+
+<div class="parallax hero" data-parallax-speed="1">
+    <div class="parallax-content">
+        <h1>Interactive Photography Map</h1>
+    </div>
+</div>
+
+<div class="cleft-wrapper">
+    <div class="cleft-left"></div>
+    <div class="cleft-right"></div>
+</div>
+
+<div class="spacer">
+    <div class="container">
+        <div class="distribution-map col-md-8">
+            <h3 class="text-center">Choose a location on the map or scroll down</h3>
+            <img src="Simcoe_County_Locator_map.svg" max-width="1000px" id="mapsvg" height="auto">
+
+            <button class="map-point" style="top:57%;left:48%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a id="barriemaplink" href="#">Barrie</a>
+                    </div>
+                </div>
+            </button>
+
+            <button class="map-point" style="top:35%;left:50%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a href="index.html#algonquin" id="algonquinmaplink">Algonquin Park</a>
+                    </div>
+                </div>
+            </button>
+
+            <button class="map-point" style="top:52%;left:52%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a href="index.html#horseshoe" id="horseshoemaplink">Horseshoe Valley</a>
+                    </div>
+                </div>
+            </button>
+
+            <button class="map-point" style="top:45%;left:30%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a href="index.html#collingwood" id="collingwoodmaplink">Collingwood</a>
+                    </div>
+                </div>
+            </button>
+
+            <button class="map-point" style="top:50%;left:65%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a href="index.html#lakesimcoe" id="lakesimcoemaplink">Lake Simcoe</a>
+                    </div>
+                </div>
+            </button>
+            <button class="map-point" style="top:45%;left:40%">
+                <div class="content">
+                    <div class="centered-y">
+                        <a href="index.html#wasaga" id="wasagamaplink">Wasaga Beach</a>
+                    </div>
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="carrotBox">
+    <div class="carrot"></div>
+</div>
+
+
+<div class="parallax one" data-parallax-speed="1" id="barrie">
+    <div class="parallax-content">
+        <h1>Barrie</h1>
+    </div>
+</div>
+
+<div class="cleft-wrapper">
+    <div class="cleft-left"></div>
+    <div class="cleft-right"></div>
+</div>
+
+<div class="spacer">
+    <div class="container">
+        <h3>Introduction</h3>
+        <p>Need directions? <a href="https://www.google.ca/maps/place/Barrie,+ON/data=!4m2!3m1!1s0x882aa3371ad7206d:0x1d2e0f00a84b535a?sa=X&ved=0ahUKEwi6xNPEia_TAhVp0oMKHRmoAg4Q8gEIkAEwDQ">Click Here!</a></br> Barrie is a city in Central Ontario, Canada, on the shores of Kempenfelt Bay, the western arm of Lake Simcoe. Although located in Simcoe County, the city is politically independent. It is part of the Huronia region of Central Ontario. Barrie is within the northern part of the Greater Golden Horseshoe, a densely populated and industrialized region of Ontario.</p>
+        <p>At its inception, Barrie was an establishment of houses and warehouses at the foot of the Nine Mile Portage from Kempenfelt Bay to Fort Willow, an aboriginal transportation route that existed centuries before Europeans came to Simcoe County. The portage linked Kempenfelt Bay through Willow Creek, connecting Lake Simcoe to the Nottawasaga River which flows into Georgian Bay off Lake Huron.
+
+Barrie played an integral role in the War of 1812. During the War, the city became a supply depot for British forces, and in addition, the Nine Mile Portage was adopted by the British Military as a key piece of their supply line which provided a strategic path for communication, personnel, and vital supplies and equipment to and from Fort Willow and Georgian Bay / Lake Huron. Today, the Nine Mile Portage is marked by signs along roads in Barrie and in Springwater Township. You can follow the scenic path from Memorial Square all the way to Fort Willow.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="images/barrie/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/barrie/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/barrie/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/barrie/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/barrie/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/barrie/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/barrie/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/barrie/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/barrie/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/barrie/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/barrie/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/barrie/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+<div class="carrotBox">
+    <div class="carrot"></div>
+</div>
+
+<div class="parallax two" data-parallax-speed="0.75" id="collingwood">
+    <div class="parallax-content">
+        <h1>Collingwood</h1>
+    </div>
+</div>
+
+<div class="cleft-wrapper">
+    <div class="cleft-left"></div>
+    <div class="cleft-right"></div>
+</div>
+
+<div class="spacer">
+    <div class="container">
+        <h3>Introduction</h3>
+        <p>Need directions? <a href="https://www.google.ca/maps/place/Collingwood,+ON/@44.5025927,-80.2874069,12z/data=!3m1!4b1!4m5!3m4!1s0x882a7bdbea583ae5:0xd9be61e8338ba720!8m2!3d44.5007687!4d-80.2169047">Click Here!</a></br> Collingwood is a town in Ontario, Canada, north of Toronto. Its harbour is in Nottawasaga Bay, the southern part of vast Georgian Bay. The city is a gateway to the Blue Mountain ski resort, with its downhill and cross-country trails. The town center is marked by the beaux arts–style Collingwood Federal Building. Nearby, the Collingwood Museum has exhibits on Collingwood Harbour's shipbuilding history.</p>
+
+<div class="row">
+  <div class="column">
+    <img src="images/collingwood/1.jpg" style="width:100%" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/collingwood/2.jpg" style="width:100%" onclick="openModal3();currentSlide3(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/collingwood/3.jpg" style="width:100%" onclick="openModal3();currentSlide3(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/collingwood/4.jpg" style="width:100%" onclick="openModal3();currentSlide3(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal3()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/collingwood/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/collingwood/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/collingwood/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/collingwood/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/collingwood/1.jpg" style="width:100%" onclick="currentSlide3(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/collingwood/2.jpg" style="width:100%" onclick="currentSlide3(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/collingwood/3.jpg" style="width:100%" onclick="currentSlide3(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/collingwood/4.jpg" style="width:100%" onclick="currentSlide3(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax three" data-parallax-speed="0.25" id="horseshoe">
+        <div class="parallax-content">
+            <h1>Horseshoe Valley</h1>
+        </div>
+    </div>
+
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer">
+        <div class="container">
+            <h3>Introduction</h3>
+            <p>Need Directions? <a href=”https://www.google.ca/maps/place/Horseshoe+Resort/@44.4086351,-79.6274283,10z/data=!4m5!3m4!1s0x4d2ab4e9ccf5f9eb:0x9d1e789938874950!8m2!3d44.5506061!4d-79.6729508” alt=”HorseshoeResort-Google-Maps”>Click Here!</a>
+                </br>Horseshoe Resort, located near Barrie, is a top Ontario resort offering four seasons of fun!  Conveniently located just an hour north of Toronto,
+experience the newly upgraded Valley Golf Course, 400 acres of single-track bike terrain in the Copeland forest, delicious dining options and full
+service Amba Spa. Ideal for fun-filled family vacations, year-round getaways and meetings. </p>
+
+        <div class="row">
+  <div class="column">
+    <img src="images/horseshoe/1.jpg" style="width:100%" onclick="openModal2();currentSlide2(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/horseshoe/2.jpg" style="width:100%" onclick="openModal2();currentSlide2(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/horseshoe/3.jpg" style="width:100%" onclick="openModal2();currentSlide2(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/horseshoe/4.jpg" style="width:100%" onclick="openModal2();currentSlide2(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/horseshoe/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/horseshoe/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/horseshoe/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/horseshoe/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/horseshoe/1.jpg" style="width:100%" onclick="currentSlide2(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/horseshoe/2.jpg" style="width:100%" onclick="currentSlide2(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/horseshoe/3.jpg" style="width:100%" onclick="currentSlide2(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/horseshoe/4.jpg" style="width:100%" onclick="currentSlide2(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+</div>
+        </div>
+    </div>
+
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax four" data-parallax-speed="0.5" id="lakesimcoe">
+        <div class="parallax-content">
+            <h1>Lake Simcoe</h1>
+        </div>
+    </div>
+
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer">
+        <div class="container">
+            <h3>Introduction</h3>
+            <p>Need directions? <a href="https://www.google.ca/maps/place/Lake+Simcoe/@44.3582966,-79.7009915,10z/data=!3m1!4b1!4m5!3m4!1s0x89d54d596d4922a3:0xc090fa1a7636063f!8m2!3d44.4635548!4d-79.3352899">Click Here!</a></br>
+              Lake Simcoe is a lake in Southern Ontario, Canada, the fourth-largest lake wholly in the province, after Lake Nipigon, Lac Seul, and Lake Nipissing.[6] At the time of the first European contact in the 17th century the lake was called Ouentironk ("Beautiful Water") by the Wyandot (Huron) people. It was also known as Lake Toronto until it was renamed by John Graves Simcoe, the first Lieutenant-Governor of Upper Canada, in memory of his father, Captain John Simcoe, Royal Navy.
+</p><p>
+    The lake is bordered by Simcoe County, Durham Region, and York Region. The city of Barrie is located on Kempenfelt Bay, and Orillia is located at the entrance to Lake Couchiching. The watershed draining into the lake contains a population of roughly half a million people, including the northern portion of the Greater Toronto Area (GTA).</p>
+<div class="row">
+  <div class="column">
+    <img src="images/lakesimcoe/1.jpg" style="width:100%" onclick="openModal1();currentSlide1(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/lakesimcoe/2.jpg" style="width:100%" onclick="openModal1();currentSlide1(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/lakesimcoe/3.jpg" style="width:100%" onclick="openModal1();currentSlide1(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/lakesimcoe/4.jpg" style="width:100%" onclick="openModal1();currentSlide1(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal1" class="modal">
+  <span class="close cursor" onclick="closeModal1()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/lakesimcoe/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/lakesimcoe/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/lakesimcoe/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/lakesimcoe/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/lakesimcoe/1.jpg" style="width:100%" onclick="currentSlide1(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/lakesimcoe/2.jpg" style="width:100%" onclick="currentSlide1(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/lakesimcoe/3.jpg" style="width:100%" onclick="currentSlide1(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/lakesimcoe/4.jpg" style="width:100%" onclick="currentSlide1(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <div class="carrotBox">
+    <div class="carrot"></div>
+</div>
+
+<div class="parallax five" data-parallax-speed="0.75" id="wasaga">
+    <div class="parallax-content">
+        <h1>Wasaga Beach</h1>
+    </div>
+</div>
+
+<div class="cleft-wrapper">
+    <div class="cleft-left"></div>
+    <div class="cleft-right"></div>
+</div>
+
+<div class="spacer">
+    <div class="container">
+        <h3>Introduction</h3>
+        <p>Need directions? <a href="https://www.google.ca/maps/place/Wasaga+Beach,+ON/@44.5115276,-80.1239425,12z/data=!3m1!4b1!4m5!3m4!1s0x882a80578282bf25:0x56e3cb1910ac4639!8m2!3d44.5207419!4d-80.0160668">Click Here!</a></br> Wasaga Beach is a Canadian town at the southern end of Ontario's Georgian Bay. Its long, sandy beach lies on Nottawasaga Bay, with views of the rugged Niagara Escarpment. It’s known for canoe routes on the winding Nottawasaga River. Nancy Island Historic Site, near the river’s mouth, commemorates the War of 1812. Footpaths and cycle trails crisscross Wasaga Beach Provincial Park, home to native wildlife.</p>
+
+       <div class="row">
+  <div class="column">
+    <img src="images/wasaga/1.jpg" style="width:100%" onclick="openModal4();currentSlide4(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/wasaga/2.jpg" style="width:100%" onclick="openModal4();currentSlide4(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/wasaga/3.jpg" style="width:100%" onclick="openModal4();currentSlide4(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/wasaga/4.jpg" style="width:100%" onclick="openModal4();currentSlide4(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal4" class="modal">
+  <span class="close cursor" onclick="closeModal4()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/wasaga/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/wasaga/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/wasaga/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/wasaga/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/wasaga/1.jpg" style="width:100%" onclick="currentSlide4(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/wasaga/2.jpg" style="width:100%" onclick="currentSlide4(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/wasaga/3.jpg" style="width:100%" onclick="currentSlide4(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/wasaga/4.jpg" style="width:100%" onclick="currentSlide4(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="carrotBox">
+        <div class="carrot"></div>
+    </div>
+
+    <div class="parallax six" data-parallax-speed="0.25" id="algonquin">
+        <div class="parallax-content">
+            <h1>Algonquin Park</h1>
+        </div>
+    </div>
+
+    <div class="cleft-wrapper">
+        <div class="cleft-left"></div>
+        <div class="cleft-right"></div>
+    </div>
+
+    <div class="spacer">
+        <div class="container">
+            <h3>Introduction</h3>
+            <p>Need directions? <a href="https://www.google.ca/maps/place/Algonquin+Provincial+Park/@45.8371591,-78.4491617,12z/data=!4m5!3m4!1s0x4cd679c83c416dff:0x436dbbeb68f460eb!8m2!3d45.8371591!4d-78.3791239">Click Here!</a></br> Algonquin Provincial Park is in southeastern Ontario, Canada. Its forests, rivers and numerous lakes, including the large Lake of Two Rivers, are home to moose, bears and common loons. The park’s many trails include the Whiskey Rapids Trail, along the Oxtongue River, and the Barron Canyon Trail, with views from the north rim. The Algonquin Logging Museum features a re-created camp and a steam-powered amphibious tug.</p>
+<div class="row">
+  <div class="column">
+    <img src="images/algonquin/1.jpg" style="width:100%" onclick="openModal5();currentSlide5(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/algonquin/2.jpg" style="width:100%" onclick="openModal5();currentSlide5(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/algonquin/3.jpg" style="width:100%" onclick="openModal5();currentSlide5(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/algonquin/4.jpg" style="width:100%" onclick="openModal5();currentSlide5(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal5" class="modal">
+  <span class="close cursor" onclick="closeModal5()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/algonquin/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/algonquin/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/algonquin/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/algonquin/4.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/algonquin/1.jpg" style="width:100%" onclick="currentSlide5(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/algonquin/2.jpg" style="width:100%" onclick="currentSlide5(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/algonquin/3.jpg" style="width:100%" onclick="currentSlide5(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/algonquin/4.jpg" style="width:100%" onclick="currentSlide5(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+    <script src="js/app.js">
+    </script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

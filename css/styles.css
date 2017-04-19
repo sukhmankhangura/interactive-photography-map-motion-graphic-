@@ -1,0 +1,440 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+html, body {
+    width: 100%
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.hero {
+    position: relative;
+    text-align: center
+}
+
+
+.parallax {
+    display: block;
+    text-align: center;
+    padding: 10em 1em;
+    color: #fff;
+    overflow: hidden
+}
+
+.parallax h1 {
+    font-size: 4em;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 15px;
+    letter-spacing: -1.5px;
+    text-shadow: 4px 5px green;
+}
+
+.parallax p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
+}
+
+.one {
+    background: url(https://c1.staticflickr.com/6/5473/11710171624_ce84b97981_k.jpg) no-repeat center center
+}
+
+.two {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/7b/7e/2d/7b7e2de12a9f2d5709cb5ce06d51c875.jpg) no-repeat center center
+}
+
+.three {
+    background: url(https://lh5.googleusercontent.com/-1z-UL2lQbmk/VJtS6qDjT2I/AAAAAAABV08/s5b7GoSEkmo/w2048-h1361/Barrie%2BSandy%2BHollow%2B016.JPG) no-repeat center center
+}
+
+.four {
+    background: url(https://c1.staticflickr.com/6/5473/11710171624_ce84b97981_k.jpg) no-repeat center center
+}
+
+.five {
+    background: url(http://map.visitsouthgeorgianbay.ca/wp-content/uploads/2014/10/Beaches_of_Wasaga_Beach_Ontario_-c.jpg) no-repeat center center
+}
+
+.six {
+    background: url(http://www.parksbloggerontario.com/wp-content/uploads/2015/10/Algonquin-Cottages-and-Fall-color-reflection.jpg) no-repeat center center
+}
+.hero{
+    background: url(https://cangeo-media-library.s3.amazonaws.com/s3fs-public/images/web_articles/garthlenz-3509.jpg) no-repeat center center;
+}
+.spacer {
+    display: block;
+    color: #fff;
+    font-family: arial, sans-serif;
+    padding: 3em 0;
+    background: grey;
+}
+
+h3.text-center{
+    position: relative;
+    top: -50px;
+}
+.spacer h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    margin-bottom: 15px
+    
+}
+
+.spacer p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px
+}
+
+button {
+    border: 1px solid #aaa;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    background: none;
+    font-size: 1.25em;
+    color: #555;
+    display: inline-block;
+    margin-right: -5px;
+    vertical-align: top
+}
+
+button:hover {
+    background: #00ace9;
+    color: white;
+    border-color: #00ace9;
+    cursor: pointer
+}
+
+button.danger {
+    margin-left: 25px;
+    background: #d30;
+    color: white;
+    border-color: #d30
+}
+
+button.danger:hover {
+    background: #a00;
+    border-color: #a00
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 95%
+}
+
+.centered {
+    text-align: center;
+    padding-bottom: 3.75em
+}
+
+.cleft-wrapper {
+    position: relative;
+    top: -1.25rem;
+    margin-bottom: -1.25rem;
+    left: 0;
+    width: 100%;
+    height: 1.25rem;
+    overflow: hidden;
+}
+
+.cleft-left, .cleft-right {
+    width: 50%;
+    height: 1.25rem;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+}
+
+.cleft-left {
+    left: -1.5rem;
+}
+
+.cleft-right {
+    right: -1.5rem;
+}
+
+.cleft-left:before, .cleft-right:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.cleft-left:before {
+    right: -1.5rem;
+    border-width: 1.25rem 0 0 1.5rem;
+    border-color: transparent transparent transparent grey;
+}
+
+.cleft-right:before {
+    left: -1.5rem;
+    border-width: 1.25rem 1.5rem 0 0;
+    border-color: transparent grey transparent transparent;
+}
+
+.carrotBox {
+    position: relative
+}
+
+.carrot {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 1.25rem solid grey;
+    border-right: 1.5rem solid transparent;
+    border-left: 1.5rem solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5rem;
+    bottom: -1.25rem;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centered-y {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.distribution-map {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.distribution-map > img {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.distribution-map .map-point {
+    cursor: pointer;
+    outline: none;
+    z-index: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out, z-index 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
+    -webkit-transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
+    background: #e69c53;
+    border: 4px solid #fff;
+}
+
+.distribution-map .map-point .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+    overflow: overlay;
+    
+}
+
+.distribution-map .map-point:active, .distribution-map .map-point:focus {
+    margin: 0;
+    padding: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 300px;
+    height: 220px;
+    color: #e5e5e5;
+    z-index: 1;
+    -webkit-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
+
+.distribution-map .map-point:active .content, .distribution-map .map-point:focus .content {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    -webkit-transition-delay: 0.25s, 0s, 0s;
+    -webkit-transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out 0.25s, height 0.25s ease-in-out, overflow 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
+    color: #afe1fa;
+}
+
+#mapsvg{
+    width: 100%;
+    margin-top: -35%;
+    margin-bottom: -40%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+h1{
+    position: relative;
+    z-index: 1;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
